@@ -1,24 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ListaFiszek from './ListaFiszek';
 
 function App() {
+  const [fiszki, zbiorFiszek] = useState(FISZKA_PRZYKLAD)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ListaFiszek fiszki={fiszki} />
   );
 }
+
+const FISZKA_PRZYKLAD = [
+  {
+    id: 1,
+    pytanie: 'Ile to 2 + 2?',
+    odpowiedz: '4',
+    mozliwosci: [
+      '2',
+      '3',
+      '4',
+      '5'
+    ]
+  },
+  {
+    id: 2,
+    pytanie: 'Pytanie?',
+    odpowiedz: 'Odpowiedź',
+    mozliwosci: [
+      'Odpowiedź',
+      'Odpowiedź 1',
+      'Odpowiedź 2',
+      'Odpowiedź 3'
+    ]
+  }
+]
 
 export default App;
