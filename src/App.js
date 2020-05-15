@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import ListaFiszek from './ListaFiszek';
+import './App.css';
+
+const API = 'https://opentdb.com/api.php?amount=10'
 
 function App() {
-  const [fiszki, zbiorFiszek] = useState(FISZKA_PRZYKLAD)
+  const [fiszki, setFiszki] = useState(FISZKA_PRZYKLAD)
   return (
     <ListaFiszek fiszki={fiszki} />
   );
