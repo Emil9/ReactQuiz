@@ -19,6 +19,7 @@ This application is react quiz. When you open this app in your browser you can c
 ![Example screenshot](./img/3.png)
 ![Example screenshot](./img/4.png)
 ![Example screenshot](./img/5.png)
+![Example screenshot](./img/6.png)
 
 ## Technologies
 * JavaScript
