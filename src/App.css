@@ -4,8 +4,8 @@ body {
 }
 
 .kontener {
-    max-width: 900px;
-    margin: 1rem 2rem;
+    max-width: 1500px;
+    margin: 2rem 6rem;
 }
 
 .header {
@@ -21,26 +21,26 @@ body {
 .form-grupa {
     display: flex;
     flex-direction: column;
-    margin: .5rem;
+    margin: 12px;
 }
 
 .form-grupa > label {
-    color: #777;
-    font-size: .75rem;
-    margin-bottom: .25rem;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 8px;
 }
 
 .btn {
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(205, 47%, 38%);
     color: white;
-    padding: .5em 1em;
+    padding: 6px 10px;
     border-radius: .3em;
     border: none;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: hsl(200, 100%, 40%);
+    background-color: hsl(205, 47%, 30%);
 }
 
 .pole-fiszek {
@@ -80,6 +80,7 @@ body {
 
 .karta .przod,
 .karta .tyl {
+    font-size: 18px;
     position: absolute;
     padding: 1rem;
     backface-visibility: hidden;
@@ -89,16 +90,12 @@ body {
     transform: rotateY(180deg);
 }
 
-.fiszka-mozliwosci {
-    margin-top: .5rem;
+.fiszka-option {
+    margin-top: 3px;
 }
 
-.fiszka-mozliwosc {
-    margin-top: .25rem;
-    color: #555;
-    font-size: .75rem;
-}
-
-.fiszka-mozliwosc:first-child {
-    margin-top: 0;
+.fiszka-options {
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
 }
